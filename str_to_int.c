@@ -1,8 +1,13 @@
 #include "shell.h"
 
 /**
+<<<<<<< HEAD:_atoi.c
  * Interactive - True if shell is on Interactive Mode
  * @info: struct address
+=======
+ * interactive - it returns true if shell is interactive mode
+ * @info: it describes struct address
+>>>>>>> c76496eff56f47da802d8c80b08c0a89d96696ee:str_to_int.c
  *
  * Return: 1 if on interactive mode
  * 0 if not

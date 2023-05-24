@@ -1,12 +1,20 @@
 #include "shell.h"
 
 /**
+<<<<<<< HEAD:builtin.c
  * _myexit - exit shell
  * @info: Struct having potential arguments
  * used to maintain a stable function prototype
  *
  * Return: exit with the given exit status
  * (0) if info.argv[0] != "exit"
+=======
+ * _myexit - it exits the shell
+ * @info: Structure containing potential arguments. Used to maintain
+ *          constant function prototype.
+ *  Return: exits with a given exit status
+ *         (0) if info.argv[0] != "exit"
+>>>>>>> c76496eff56f47da802d8c80b08c0a89d96696ee:change_dir.c
  */
 
 int _myexit(info_t *info)
@@ -32,11 +40,18 @@ int _myexit(info_t *info)
 }
 
 /**
+<<<<<<< HEAD:builtin.c
  * _mycd - change current directory of the process
  * @info: Struct having potential arguments
  * used to maintain a stable function prototype
  *
  * Return: 0
+=======
+ * _mycd - it changes the current directory of the process
+ * @info: Structure containing potential arguments. Used to maintain
+ *          constant function prototype.
+ *  Return: Always 0
+>>>>>>> c76496eff56f47da802d8c80b08c0a89d96696ee:change_dir.c
  */
 
 int _mycd(info_t *info)
@@ -84,10 +99,17 @@ int _mycd(info_t *info)
 }
 
 /**
+<<<<<<< HEAD:builtin.c
  * _myhelp - change current directory of the process
  * @info: Struct having potential arguments
  * used to maintain a stable function prototype
  * Return: 0
+=======
+ * _myhelp - it changes the current directory of the process
+ * @info: Structure containing potential arguments. Used to maintain
+ *          constant function prototype.
+ *  Return: Always 0
+>>>>>>> c76496eff56f47da802d8c80b08c0a89d96696ee:change_dir.c
  */
 
 int _myhelp(info_t *info)
