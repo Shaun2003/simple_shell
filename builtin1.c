@@ -1,12 +1,14 @@
 #include "shell.h"
 
 /**
- * _myhistory - displays the history list, one command by line, preceded
- *              with line numbers, starting at 0.
- * @info: Structure containing potential arguments. Used to maintain
- *        constant function prototype.
- *  Return: Always 0
+ * _myhistory - show the history list, one command pair line, uphold
+ * with the line num, starting from 0
+ * @info: Struct having potential arguments, used to maintain
+ * a stable function prototypes
+ *
+ * Return: 0
  */
+
 int _myhistory(info_t *info)
 {
 	print_list(info->history);
@@ -14,12 +16,14 @@ int _myhistory(info_t *info)
 }
 
 /**
- * unset_alias - sets alias to string
+ * unset_alias - set alias to the string
  * @info: parameter struct
- * @str: the string alias
+ * @str: string alias
  *
- * Return: Always 0 on success, 1 on error
+ * Return: 0 if success
+ * 1 if not
  */
+
 int unset_alias(info_t *info, char *str)
 {
 	char *p, c;
@@ -37,12 +41,14 @@ int unset_alias(info_t *info, char *str)
 }
 
 /**
- * set_alias - sets alias to string
+ * set_alias - set alias to the string
  * @info: parameter struct
- * @str: the string alias
+ * @str: string alias
  *
- * Return: Always 0 on success, 1 on error
+ * Return: 0 if success
+ * 1 if not
  */
+
 int set_alias(info_t *info, char *str)
 {
 	char *p;
@@ -58,11 +64,13 @@ int set_alias(info_t *info, char *str)
 }
 
 /**
- * print_alias - prints an alias string
- * @node: the alias node
+ * print_alias - print the alias string
+ * @node: alias node
  *
- * Return: Always 0 on success, 1 on error
+ * Return: 0 if success
+ * 1 if not
  */
+
 int print_alias(list_t *node)
 {
 	char *p = NULL, *a = NULL;
@@ -81,11 +89,13 @@ int print_alias(list_t *node)
 }
 
 /**
- * _myalias - mimics the alias builtin (man alias)
- * @info: Structure containing potential arguments. Used to maintain
- *          constant function prototype.
- *  Return: Always 0
+ * _myalias - imitate the alias builtin
+ * @info: Struct having potential arguments
+ * used to maintain a stable function prototype
+ *
+ * Return: 0
  */
+
 int _myalias(info_t *info)
 {
 	int i = 0;

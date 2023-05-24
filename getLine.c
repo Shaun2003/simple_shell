@@ -1,13 +1,14 @@
 #include "shell.h"
 
 /**
- * input_buf - buffers chained commands
- * @info: parameter struct
- * @buf: address of buffer
- * @len: address of len var
+ * input_buf - Buffer chained commands
+ * @info: Parameter struct
+ * @buf: Address of buffer
+ * @len: Address of len var
  *
  * Return: bytes read
  */
+
 ssize_t input_buf(info_t *info, char **buf, size_t *len)
 {
 	ssize_t r = 0;
@@ -45,11 +46,12 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 }
 
 /**
- * get_input - gets a line minus the newline
+ * get_input - get the line minus the newline
  * @info: parameter struct
  *
  * Return: bytes read
  */
+
 ssize_t get_input(info_t *info)
 {
 	static char *buf; /* the ';' command chain buffer */
@@ -90,13 +92,14 @@ ssize_t get_input(info_t *info)
 }
 
 /**
- * read_buf - reads a buffer
+ * read_buf - read the buffer
  * @info: parameter struct
  * @buf: buffer
  * @i: size
  *
  * Return: r
  */
+
 ssize_t read_buf(info_t *info, char *buf, size_t *i)
 {
 	ssize_t r = 0;
@@ -110,13 +113,14 @@ ssize_t read_buf(info_t *info, char *buf, size_t *i)
 }
 
 /**
- * _getline - gets the next line of input from STDIN
+ * _getline - get the next line of input from STDIN
  * @info: parameter struct
- * @ptr: address of pointer to buffer, preallocated or NULL
- * @length: size of preallocated ptr buffer if not NULL
+ * @ptr: address of pointer to buffer, prepositioned or NULL
+ * @length: size of prepositioned ptr buffer if not NULL
  *
  * Return: s
  */
+
 int _getline(info_t *info, char **ptr, size_t *length)
 {
 	static char buf[READ_BUF_SIZE];
@@ -157,11 +161,12 @@ int _getline(info_t *info, char **ptr, size_t *length)
 }
 
 /**
- * sigintHandler - blocks ctrl-C
- * @sig_num: the signal number
+ * sigintHandler - block ctrl-C
+ * @sig_num: signal num
  *
  * Return: void
  */
+
 void sigintHandler(__attribute__((unused))int sig_num)
 {
 	_puts("\n");

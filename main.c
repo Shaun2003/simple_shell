@@ -5,8 +5,10 @@
  * @ac: arg count
  * @av: arg vector
  *
- * Return: 0 on success, 1 on error
+ * Return: 0 success
+ * -1 if not
  */
+
 int main(int ac, char **av)
 {
 	info_t info[] = { INFO_INIT };

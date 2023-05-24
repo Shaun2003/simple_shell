@@ -2,11 +2,12 @@
 
 /**
  * _strcpy - copies a string
- * @dest: the destination
- * @src: the source
+ * @dest: destination
+ * @src: source
  *
- * Return: pointer to destination
+ * Return: Pointer to the destination
  */
+
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
@@ -23,11 +24,12 @@ char *_strcpy(char *dest, char *src)
 }
 
 /**
- * _strdup - duplicates a string
- * @str: the string to duplicate
+ * _strdup - duplicate a string
+ * @str: string to be duplicated
  *
- * Return: pointer to the duplicated string
+ * Return: Pointer to duplicated string
  */
+
 char *_strdup(const char *str)
 {
 	int length = 0;
@@ -46,11 +48,12 @@ char *_strdup(const char *str)
 }
 
 /**
- *_puts - prints an input string
- *@str: the string to be printed
+ * _puts - copy an input string
+ * @str: string to be copied
  *
- * Return: Nothing
+ * Return:
  */
+
 void _puts(char *str)
 {
 	int i = 0;
@@ -65,12 +68,13 @@ void _puts(char *str)
 }
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * _putchar - write character c to stdout
+ * @c: character to copy
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: 1 success
+ * -1 if not and errno is set appropriate
  */
+
 int _putchar(char c)
 {
 	static int i;

@@ -1,11 +1,13 @@
 #include "shell.h"
 
 /**
- * _erratoi - converts a string to an integer
- * @s: the string to be converted
- * Return: 0 if no numbers in string, converted number otherwise
- *       -1 on error
+ * _erratoi - change the string to digit
+ * @s: string to be changed
+ *
+ * Return: 0 if there are no num in string
+ * changed num if not -1 on error
  */
+
 int _erratoi(char *s)
 {
 	int i = 0;
@@ -29,12 +31,14 @@ int _erratoi(char *s)
 }
 
 /**
- * print_error - prints an error message
- * @info: the parameter & return info struct
- * @estr: string containing specified error type
- * Return: 0 if no numbers in string, converted number otherwise
- *        -1 on error
+ * print_error - print error message
+ * @info: parameter and return info struct
+ * @estr: string having specified error
+ *
+ * Return: 0 if there are no num in string
+ * changed num if not -1 on error
  */
+
 void print_error(info_t *info, char *estr)
 {
 	_eputs(info->fname);
@@ -47,12 +51,13 @@ void print_error(info_t *info, char *estr)
 }
 
 /**
- * print_d - function prints a decimal (integer) number (base 10)
- * @input: the input
- * @fd: the filedescriptor to write to
+ * print_d - function copy a decimal (digit) num (base 10)
+ * @input: input
+ * @fd: filedescriptor to write on
  *
- * Return: number of characters printed
+ * Return: num of characters printed
  */
+
 int print_d(int input, int fd)
 {
 	int (*__putchar)(char) = _putchar;
@@ -86,13 +91,14 @@ int print_d(int input, int fd)
 }
 
 /**
- * convert_number - converter function, a clone of itoa
- * @num: number
+ * convert_number - converter function the clone of itoa
+ * @num: num
  * @base: base
  * @flags: argument flags
  *
  * Return: string
  */
+
 char *convert_number(long int num, int base, int flags)
 {
 	static char *array;
@@ -122,11 +128,12 @@ char *convert_number(long int num, int base, int flags)
 }
 
 /**
- * remove_comments - function replaces first instance of '#' with '\0'
- * @buf: address of the string to modify
+ * remove_comments - function replace first instance of '#' with '\0'
+ * @buf: address of string to mod
  *
- * Return: Always 0;
+ * Return: 0
  */
+
 void remove_comments(char *buf)
 {
 	int i;
