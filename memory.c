@@ -1,3 +1,6 @@
+#include "shell.h"
+
+
 
 /**
  * bfree - frees a pointer and NULLs the address
